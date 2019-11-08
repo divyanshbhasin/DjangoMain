@@ -1,0 +1,12 @@
+{% extends "login/parent.html" %}
+
+{% block body %}
+<h1> Create a new Account</h1>
+<br>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <button type="submit" class="btn btn-primary">Create Account!</button>
+</form>
+{% endblock %}

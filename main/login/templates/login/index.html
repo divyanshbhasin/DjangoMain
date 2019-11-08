@@ -1,0 +1,9 @@
+{% extends "login/parent.html" %}
+
+{% block body %}
+<h1>Welcome to My first Django Project
+
+{% if user.is_authenticated %}
+- {{ user.username }}
+    {% endif %}</h1>
+{% endblock %}
